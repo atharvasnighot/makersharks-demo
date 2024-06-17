@@ -42,8 +42,8 @@ Alternatively, you can build the JAR file and run it:
 
 Register User:
 ```
-curl -X POST http://localhost:8080/api/users/register \
--H "Content-Type: application/json" \
+curl -X POST http://localhost:8080/api/users/register 
+-H "Content-Type: application/json" 
 -d '{
   "email": "user@example.com",
   "username": "user",
@@ -53,8 +53,8 @@ curl -X POST http://localhost:8080/api/users/register \
 
 Login:
 ```
-curl -X POST http://localhost:8080/api/users/login \
--H "Content-Type: application/json" \
+curl -X POST http://localhost:8080/api/users/login 
+-H "Content-Type: application/json" 
 -d '{
   "email": "user@example.com",
   "password": "password"
@@ -63,7 +63,7 @@ curl -X POST http://localhost:8080/api/users/login \
 
 Fetch Self Profile:
 ```
-curl -X GET http://localhost:8080/api/users/fetch/self \
+curl -X GET http://localhost:8080/api/users/fetch/self 
 -H "Authorization: Bearer <JWT-Token>"
 ```
 
